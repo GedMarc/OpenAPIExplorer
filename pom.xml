@@ -1,0 +1,70 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <artifactId>dev-kit</artifactId>
+        <groupId>com.guicedee</groupId>
+        <version>0.0.0_0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.jwebmp.apps</groupId>
+    <artifactId>openapi-explorer</artifactId>
+    <packaging>jar</packaging>
+    <name>OpenAPIExplorer</name>
+
+    <description>The OpenAPI Explorer based on JWebMP</description>
+
+    <url>https://jwebmp.com</url>
+
+	<properties>
+        <jdk.release>14</jdk.release>
+	</properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.jwebmp</groupId>
+                <artifactId>jwebmp-bom</artifactId>
+                <type>pom</type>
+                <scope>import</scope>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jwebmp.plugins.iconsets</groupId>
+            <artifactId>jwebmp-font-awesome5</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jwebmp.plugins.jquery</groupId>
+            <artifactId>jwebmp-jquery-ui</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jwebmp.plugins.bootstrap</groupId>
+            <artifactId>jwebmp-bootstrap</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jwebmp.plugins.bootstrap</groupId>
+            <artifactId>jwebmp-bootstrap-dialog4</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.guicedee.servlets</groupId>
+            <artifactId>guiced-undertow</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
