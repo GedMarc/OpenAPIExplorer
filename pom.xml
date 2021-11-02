@@ -17,9 +17,9 @@
 
     <url>https://jwebmp.com</url>
 
-	<properties>
+    <properties>
         <jdk.release>14</jdk.release>
-	</properties>
+    </properties>
 
 
     <dependencyManagement>
